@@ -3,13 +3,19 @@
     padding:0;
     margin:0;
     font-family:sans-serif;
+    /* overflow-x:hidden;
+    overflow: hidden; */
 
 }
+
 .menu-bar
 {
     background-image: linear-gradient(to right, #91b171,#25471a);
+    position: fixed;
+    width: 100%;
 }
- .nav-link
+
+.nav-link
  {
      font-size: 16px;
      color:#fff !important;
@@ -21,6 +27,17 @@
     text-align: right;
 }
 
+.nav-link:hover {
+    font-family: 'Roboto', sans-serif;
+    transform: scale(1.1);
+    color: #171e16 !important;
+}
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } */
+
 
 .menu-bar .navbar-toggler
 {
@@ -31,11 +48,12 @@
 
 .banner
 {
-    height: 80vh;
+    height: 90vh;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(assets/homepic.jpg);
     background-size: cover;
     background-position: center;
     color: #fff;
+    overflow: hidden;
 }
 
 .banner h1
@@ -45,13 +63,13 @@
      letter-spacing: 6px;
      font-weight: 600;
      text-shadow: 0 0 30px rgba(0,0,0,0.5);
-
+     overflow: hidden;
 
 }
 
 .search-job
 {
-    padding:30px 0;
+    padding:40px 0;
     margin: -50px 10% 50px;
     background-image: linear-gradient(to left, #91b171,#25471a);
 }
@@ -219,32 +237,12 @@ h3::before
    margin-bottom: 10px;
 }
 
-/*---------------app banner-----------------------*/
-
-#app-banner
-{
-    background-image: linear-gradient(to right,#91b171,#25471a) ;
-    padding: 50px 0;
-    
-}
-
-#app-banner h1
-{
-    margin-top: 20px;
-    color: #fff;
-}
-
-#app-banner img{
-    width: 150px;
-    margin: 50px 0;
-}
-
 
 
 /*-----------------------footer------------------------------*/
 #footer
 {
-    background: #f8f9fd;
+    background-image: linear-gradient(to right,#91b171,#25471a) ;
     padding:20px 10px 8px;
 
 }
@@ -252,11 +250,12 @@ h3::before
 {
     font-size:xx-large;
     margin:30px 0;
+    color: #2a2c2a;
 }
 
 #footer a img
 {
-    width:50px;
+    width:24px;
 }
 
 hr{
