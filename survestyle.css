@@ -1,0 +1,44 @@
+*
+{
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+}
+
+form {
+	width: 400px;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	border: solid 1px darkgrey;
+	flex-basis: grow;
+}
+
+form>div {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+label {
+	width: 100%;
+}
+
+input,
+select {
+	width: 100%;
+	box-sizing: border-box;
+}

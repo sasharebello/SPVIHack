@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <link rel="stylesheet" href="survestyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Job Application</h1>
+    <form action='/survey/checkout' method='post' enctype="multipart/form-data">
+        <div>
+            <!--Numbers with Stepper-->
+            <label>What is your name?</label>
+            <input name='person'  type='name' required>
+        </div>
+        <div>
+            <!--Dropdown list-->
+            <label>Gender</label>
+            <select name='gender'>
+                <option value='female'>👩 She/Her</option>
+                <option value='male'>👨 He/Him</option>
+                <option value='neutral'>🧑 They/Them</option>
+            </select>
+        </div>
+        <div>
+            <label>How many years of experience?</label>
+            <input type='number' name='years' placeholder='0 - 120' min='0' max='120' required>
+        </div>
+        <div>
+            <!-- Checkbox -->
+            <label>Have you applied before?</label>
+            <input type='checkbox' name='question' value='Yes'> 
+        </div>
+        <div>
+            <!-- Date -->
+            <label>Your birthday</label>
+            <input name='bday' type='date'>
+        </div>
+        <div>
+            <!-- Text input with data list -->
+            <label>Ideal location</label>
+            <input type="text" name="color" list="colors">
+            <datalist id="colors">
+                <option>Mumbai, India</option>
+                <option>Chicago, U.S</option>
+                <option>Pune, India</option>
+                <option>London, U.K</option>
+                <option>San Francisco, U.S</option>
+                <option>Paris, France</option>
+                <option>Taipei, Taiwan</option>
+            </datalist>
+        </div>
+        <div>
+            <input type='submit'>
+            <input type='hidden' name='redirecturl' value='app.html'>
+            <input type='hidden' name='survey' value='app.html'>
+        </div>
+    </form>   
+</body>
+</html>
